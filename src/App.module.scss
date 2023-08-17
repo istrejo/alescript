@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import "./variables.modules";
+
+
+body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-size: 1.5vh;
+    width: 100%;
+    height: 100%;
+    color: $dark;
+    background-color: $white;
+    box-sizing: border-box;
+}
+
+li {
+    color: $dark;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-title {
+    font-family: 'Burtons';
+    color: $angular;
+}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.writing {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 18ch;
+
+    animation: typing 2s steps(var(--length)), blink .5s infinite step-end alternate;
+    overflow: hidden;
+
+}
+
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+@font-face {
+    font-family: 'burtons';
+    src: url('./../public/fonts/Burtons.otf');
+}
